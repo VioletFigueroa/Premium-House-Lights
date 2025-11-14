@@ -1,5 +1,14 @@
 # Premium House Lights: The Heist
 
+## Main Project Files
+| File Name | Description |
+| --- | --- |
+| [Project 12 - Forensics Report and Documentation.pdf](Project%2012%20-%20Forensics%20Report%20and%20Documentation.pdf) | Main technical report (primary deliverable) |
+| [Premium House Lights_ Email To Your Manager.pdf](Premium%20House%20Lights_%20Email%20To%20Your%20Manager.pdf) | Executive summary communication |
+| [Premium House Lights_ The Heist.pdf](Premium%20House%20Lights_%20The%20Heist.pdf) | Presentation slides |
+
+---
+
 ## Executive Summary
 
 This portfolio project presents a full-scope digital forensics investigation and incident response simulation following a cyberattack at Premium House Lights, a fictional small business. The documentation guides both technical and non-technical readers through breach detection, log analysis, attacker tracing, and remediation recommendations. The project serves as a real-world case study showing effective security controls and strategies to prevent similar incidents.
@@ -42,15 +51,6 @@ Shows VLAN structure, firewall placement, and business services.
 - **Attack Path & Security Gaps:**
 ![Attacker Steps and Security Gaps](images/Premium%20House%20Lights%20Network%20%E2%80%93%20Annotated%20Attack%20Path%20and%20Security%20Gaps.drawio.png)
 Highlights the attacker’s pivot steps with callouts for missing security controls.
-
----
-
-## Main Project Files
-| File Name | Description |
-| --- | --- |
-| [Project 12 - Forensics Report and Documentation.pdf](Project%2012%20-%20Forensics%20Report%20and%20Documentation.pdf) | Main technical report (primary deliverable) |
-| [Premium House Lights_ Email To Your Manager.pdf](Premium%20House%20Lights_%20Email%20To%20Your%20Manager.pdf) | Executive summary communication |
-| [Premium House Lights_ The Heist.pdf](Premium%20House%20Lights_%20The%20Heist.pdf) | Presentation slides |
 
 ---
 
