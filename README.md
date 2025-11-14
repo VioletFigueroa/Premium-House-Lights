@@ -35,10 +35,10 @@ This project presents a full-scope digital forensics investigation and incident 
 This project provides strong visual and written evidence to support the investigation and remediation process.
 
 - **Network Diagram:**
-![Premium House Lights Network Diagram](images/network-diagram.png structure, firewall placement, and business services.)
+![Premium House Lights Network Diagram](images/phl_network_diagram.png)
 Shows VLAN structure, firewall placement, and business services.
 - **Attack Path \& Security Gaps:**
-![Attacker Steps and Security Gap Callouts](images/security-gaps-path the attacker’s pivot steps with callouts for missing security controls.)
+![Attacker Steps and Security Gaps](images/Premium%20House%20Lights%20Network%20%E2%80%93%20Annotated%20Attack%20Path%20and%20Security%20Gaps.drawio.png)
 Highlights the attacker’s pivot steps with callouts for missing security controls.
 - **Sample Access Log:**
 Redacted logs available in `phlaccesslog.txt` and `phldatabaseaccesslog.txt`.
@@ -51,18 +51,13 @@ A one-page executive summary suitable for non-technical audiences.
 
 ***
 
-## Main Project Files
+## File Index
 
-The key deliverables are PDF documents, which contain the primary case analysis and formal communications:
-
-
-| File Name | Description |
-| :-- | :-- |
-| Project-12-Forensics-Report-and-Documentation.pdf | Main report, timeline, technical analysis, conclusions |
-| Project-12-Email-To-Your-Manager.pdf | Executive summary, recommendations |
-
-Supplemental appendices (logs, diagrams, source documentation) are included to support and illustrate the findings.
-
+- [`Project 12 - Forensics Report and Documentation.pdf`](Project%2012%20-%20Forensics%20Report%20and%20Documentation.pdf) — Main technical report (primary deliverable)
+- [`Premium House Lights_ Email To Your Manager.pdf`](Premium%20House%20Lights_%20Email%20To%20Your%20Manager.pdf) — Executive summary communication
+- [`Premium House Lights_ The Heist.pdf`](Premium%20House%20Lights_%20The%20Heist.pdf) — Presentation slides
+- [`digital forensic artifacts/`](digital%20forensic%20artifacts/) — All appendices, logs, network captures, and evidence
+- [`images/`](images/) — Project diagrams, visuals for reports
 
 
 ## Lessons Learned
@@ -90,9 +85,16 @@ Supplemental appendices (logs, diagrams, source documentation) are included to s
 See the main report for detailed citations and source list.
 
 ***
-## Appendix: Additional Files
+## Digital Forensic Artifacts (Appendices)
 
-- `phlaccesslog.txt` — Web/server access logs
-- `phldatabaseaccesslog.txt` — Database access logs
+All supporting evidence, logs, and raw data referenced in the main reports are located in the [`digital forensic artifacts`](digital%20forensic%20artifacts/) folder:
+
+- [`phl_access_log.txt`](digital%20forensic%20artifacts/phl_access_log.txt) — Web/server access logs (redacted)
+- [`phl_database_access_log.txt`](digital%20forensic%20artifacts/phl_database_access_log.txt) — Database access logs
+- [`phl_database.pcap`](digital%20forensic%20artifacts/phl_database.pcap) — Network packet capture (database)
+- [`phl_webserver.pcap`](digital%20forensic%20artifacts/phl_webserver.pcap) — Network packet capture (web server)
+- [`phl_database_shell.txt`](digital%20forensic%20artifacts/phl_database_shell.txt) — Database shell session transcript
+- [`phl_database_tables.db`](digital%20forensic%20artifacts/phl_database_tables.db) — Sample database (for investigation)
+- [`sha256sum.txt`](digital%20forensic%20artifacts/sha256sum.txt) — File hashes for evidence verification
 
 ***
