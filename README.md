@@ -1,64 +1,85 @@
-# Premium-House-Lights-Network
-Executive Summary
-This project details a full-scope digital forensics investigation and incident response following a cyberattack at Premium House Lights, a fictional small business. The case includes discovery, log analysis, lateral movement tracing, and business-focused incident remediation recommendations. Both technical and non-technical audiences can see how real-world breach events unfold and how targeted controls can mitigate future risk.
+# Premium House Lights Network
 
-Project Highlights Table
-Skill Demonstrated	Tools/Technology	Result/Outcome
-Log Forensics	Bash, text processing	Reconstructed timeline of attacker entry, escalation
-Network Architecture	draw.io, Visio	Identified segmentation gaps, mapped breach impact
-Incident Response	Markdown, report writing	Produced clear executive and technical reports
-Vulnerability Analysis	Network/service enumeration	Pinpointed security gaps: WAF, MFA, privilege control
-Professional Comms	Business email, PDF summary	Delivered actionable findings to leadership
-Project Scenario & Investigation Steps
-The investigation began after abnormal web activity was detected. Working from server and database access logs, the breach path was reconstructed, revealing:
+## Executive Summary
 
-Initial access through an unrestricted file upload vulnerability.
+This project presents a full-scope digital forensics investigation and incident response simulation following a cyberattack targeting Premium House Lights—a fictional small business. The documentation guides both technical and non-technical readers through breach detection, log analysis, attacker tracing, and remediation recommendations. The project serves as a real-world case study showing effective security controls and strategies to prevent similar incidents.[^1]
 
-Lateral movement enabled by lack of internal firewall segmentation and excessive database privileges.
+***
 
-Data exfiltration via SCP/SSH to an attacker-controlled server.
+## Project Highlights
 
-Visual Evidence & Documentation
-Network Diagram:
+| Skill | Tools/Technology | Result/Outcome |
+| :-- | :-- | :-- |
+| Log Forensics | Bash, text processing | Reconstructed timeline of attacker entry/escalation |
+| Network Architecture | draw.io, Visio | Identified segmentation gaps, mapped breach impact |
+| Incident Response | Markdown, reporting | Produced executive \& technical reports |
+| Vulnerability Analysis | Enumeration, WAF, MFA | Pinpointed gaps, recommended controls |
+| Professional Comms | Email, PDF | Delivered actionable findings to leadership |
 
-Shows VLAN structure, firewall placement, and business services.
 
-Attack Path & Security Gaps:
+***
 
-Highlights attacker steps with callouts for missing controls.
+## Investigation Scenario
 
-Sample Access Log (Redacted):
-Logs available in phl_access_log.txt and phl_database_access_log.txt.
+### Steps Overview
 
-Full Forensics Report:
-See Project-12-Forensics-Report-and-Documentation.md
+- **Detection:** Abnormal web activity was flagged, prompting investigation.
+- **Initial Access:** Attacker exploited an unrestricted file upload vulnerability.
+- **Lateral Movement:** Weak firewall segmentation and overprivileged database access enabled attacker movement.
+- **Data Exfiltration:** Data stolen via SCP/SSH to an external server.[^1]
 
-Communication Sample:
-Management summary can be found in Project-12-Email-To-Your-Manager.md
+***
 
-Timeline of Key Breach Events
-Time	Event
-21:59:04	Attacker uploads malicious file (via vulnerability)
-22:00:55	Lateral movement—webserver to database (privilege abuse)
-22:02:26	Data exfiltrated to outside IP via SCP/SSH
-Lessons Learned / Business Impact
-Critical business data can be compromised rapidly without basic network segmentation and server privilege limiting.
+## Visual Evidence \& Documentation
 
-Simple controls—WAF, stronger authentication, and segmented networks—could have prevented or contained this breach.
+- **Network Diagram:** VLAN structure, firewall placement, and business services layout.
+- **Attack Path \& Security Gaps:** Diagram/annotations identify attacker movements and missing controls.
+- **Sample Access Logs:** Redacted samples in `phlaccesslog.txt` and `phldatabaseaccesslog.txt`.
+- **Full Forensics Report:** See `Project-12-Forensics-Report-and-Documentation.md`.
+- **Communication Example:** Management summary in `Project-12-Email-To-Your-Manager.md`.[^1]
 
-Communicating impact in plain language accelerates leadership buy-in for security investment.
+***
 
-Replication & Review
-This project is for demonstration only. For replication or in-depth log analysis, see included Markdown/PDF report and logs.
+## Timeline of Key Breach Events
 
-References & Citations
-This documentation and analysis were informed by:
+| Time | Event |
+| :-- | :-- |
+| 21:59:04 | Attacker uploads malicious file (vulnerability exploit) |
+| 22:00:55 | Lateral movement (webserver → database, privilege abuse) |
+| 22:02:26 | Data exfiltrated to outside IP via SCP/SSH |
 
-NIST SP 800-61 (“Computer Security Incident Handling Guide”)
 
-MITRE ATT&CK framework for adversary tactics
+***
 
-SANS forensic methodology and open-source log review practices
+## Lessons Learned
 
-[See main report citation section for full list of references and sources]
+- Critical business data may be compromised quickly without basic segmentation and privilege limitations.[^1]
+- Simple controls—Web Application Firewall (WAF), multi-factor authentication (MFA), segmented networks—could stop or contain such breaches.
+- Clear communication of risk accelerates leadership buy-in for security investments.
 
+***
+
+## Replication \& Analysis
+
+- This project is strictly for demonstration purposes.
+- For replication, detailed log analysis, or further study, consult provided Markdown/PDF reports and raw logs.
+
+***
+
+## References
+
+- NIST SP 800-61 Computer Security Incident Handling Guide
+- MITRE ATT\&CK Framework (adversary tactics)
+- SANS Forensic Methodology
+- Open-source log review practices
+
+See the main report for detailed citations and source list.[^1]
+
+***
+
+## File Index
+
+- `phlaccesslog.txt` — Web/server access logs (redacted)
+- `phldatabaseaccesslog.txt` — Database access logs (redacted)
+- `Project-12-Forensics-Report-and-Documentation.md` — Full case report
+- `Project-12-Email-To-Your-Manager.md` — Management summary
