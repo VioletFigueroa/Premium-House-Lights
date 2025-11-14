@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This project presents a full-scope digital forensics investigation and incident response simulation following a cyberattack targeting Premium House Lights—a fictional small business. The documentation guides both technical and non-technical readers through breach detection, log analysis, attacker tracing, and remediation recommendations. The project serves as a real-world case study showing effective security controls and strategies to prevent similar incidents.
+This project presents a full-scope digital forensics investigation and incident response simulation following a cyberattack targeting Premium House Lights, a fictional small business. The documentation guides both technical and non-technical readers through breach detection, log analysis, attacker tracing, and remediation recommendations. The project serves as a real-world case study showing effective security controls and strategies to prevent similar incidents.
 
 ***
 
@@ -51,7 +51,7 @@ This project presents a full-scope digital forensics investigation and incident 
 ## Lessons Learned
 
 - Critical business data may be compromised quickly without basic segmentation and privilege limitations.
-- Simple controls—Web Application Firewall (WAF), multi-factor authentication (MFA), segmented networks—could stop or contain such breaches.
+- Simple controls such as Web Application Firewall (WAF), multi-factor authentication (MFA) or segmented networks could have stoped or contained such breaches.
 - Clear communication of risk accelerates leadership buy-in for security investments.
 
 ***
