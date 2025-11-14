@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This project presents a full-scope digital forensics investigation and incident response simulation following a cyberattack targeting Premium House Lights—a fictional small business. The documentation guides both technical and non-technical readers through breach detection, log analysis, attacker tracing, and remediation recommendations. The project serves as a real-world case study showing effective security controls and strategies to prevent similar incidents.[^1]
+This project presents a full-scope digital forensics investigation and incident response simulation following a cyberattack targeting Premium House Lights—a fictional small business. The documentation guides both technical and non-technical readers through breach detection, log analysis, attacker tracing, and remediation recommendations. The project serves as a real-world case study showing effective security controls and strategies to prevent similar incidents.
 
 ***
 
@@ -26,17 +26,14 @@ This project presents a full-scope digital forensics investigation and incident 
 - **Detection:** Abnormal web activity was flagged, prompting investigation.
 - **Initial Access:** Attacker exploited an unrestricted file upload vulnerability.
 - **Lateral Movement:** Weak firewall segmentation and overprivileged database access enabled attacker movement.
-- **Data Exfiltration:** Data stolen via SCP/SSH to an external server.[^1]
+- **Data Exfiltration:** Data stolen via SCP/SSH to an external server.
 
 ***
 
 ## Visual Evidence \& Documentation
 
-- **Network Diagram:** VLAN structure, firewall placement, and business services layout.
-- **Attack Path \& Security Gaps:** Diagram/annotations identify attacker movements and missing controls.
-- **Sample Access Logs:** Redacted samples in `phlaccesslog.txt` and `phldatabaseaccesslog.txt`.
-- **Full Forensics Report:** See `Project-12-Forensics-Report-and-Documentation.md`.
-- **Communication Example:** Management summary in `Project-12-Email-To-Your-Manager.md`.[^1]
+
+- to be updated once the remaining files are uploaded correctly.
 
 ***
 
@@ -53,7 +50,7 @@ This project presents a full-scope digital forensics investigation and incident 
 
 ## Lessons Learned
 
-- Critical business data may be compromised quickly without basic segmentation and privilege limitations.[^1]
+- Critical business data may be compromised quickly without basic segmentation and privilege limitations.
 - Simple controls—Web Application Firewall (WAF), multi-factor authentication (MFA), segmented networks—could stop or contain such breaches.
 - Clear communication of risk accelerates leadership buy-in for security investments.
 
@@ -73,13 +70,10 @@ This project presents a full-scope digital forensics investigation and incident 
 - SANS Forensic Methodology
 - Open-source log review practices
 
-See the main report for detailed citations and source list.[^1]
+See the main report for detailed citations and source list.
 
 ***
 
 ## File Index
 
-- `phlaccesslog.txt` — Web/server access logs (redacted)
-- `phldatabaseaccesslog.txt` — Database access logs (redacted)
-- `Project-12-Forensics-Report-and-Documentation.md` — Full case report
-- `Project-12-Email-To-Your-Manager.md` — Management summary
+- to be updated once the remaining files are uploaded correctly.
