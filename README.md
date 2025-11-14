@@ -28,7 +28,7 @@ This portfolio project presents a full-scope digital forensics investigation and
 ---
 
 ## Quick Start Guide
-- Main deliverables are PDF files listed below.
+- Main deliverables are PDF files listed above.
 - Appendices, logs, and evidence supporting the report are in the `digital forensic artifacts` folder.
 - Visuals are in the `images` folder and embedded below where relevant.
 
