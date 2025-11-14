@@ -1,4 +1,4 @@
-# Premium House Lights Network
+# Premium House Lights: The Heist
 
 ## Executive Summary
 
