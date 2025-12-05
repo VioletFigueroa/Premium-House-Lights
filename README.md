@@ -1,82 +1,78 @@
 # Premium House Lights: The Heist
 
-## Main Project Files
-| File Name | Description |
-| --- | --- |
-| [Project 12 - Forensics Report and Documentation.pdf](Project%2012%20-%20Forensics%20Report%20and%20Documentation.pdf) | Main technical report (primary deliverable) |
-| [Premium House Lights_ Email To Your Manager.pdf](Premium%20House%20Lights_%20Email%20To%20Your%20Manager.pdf) | Executive summary communication |
-| [Premium House Lights_ The Heist.pdf](Premium%20House%20Lights_%20The%20Heist.pdf) | Presentation slides |
+## Overview
+Full-scope digital forensics investigation and incident response simulation following a cyberattack at Premium House Lights, a fictional small business. This project demonstrates breach detection, log analysis, attacker tracing, and remediation recommendations. It serves as a real-world case study showing effective security controls and strategies to prevent similar incidents.
 
----
+## Objectives
+- Investigate and document a cyberattack on a small business network
+- Reconstruct the timeline of attacker entry and lateral movement
+- Identify security gaps that enabled the breach
+- Provide actionable recommendations for remediation
+- Deliver findings to leadership in both technical and executive formats
 
-## Executive Summary
+## Methodology
+**Investigation Approach:**
+- Detection of abnormal web activity triggering investigation
+- Analysis of file upload vulnerability exploitation
+- Log forensics to trace attacker entry point
+- Network traffic analysis using PCAP captures
+- Database access log examination
+- Timeline correlation of malicious activities
 
-This portfolio project presents a full-scope digital forensics investigation and incident response simulation following a cyberattack at Premium House Lights, a fictional small business. The documentation guides both technical and non-technical readers through breach detection, log analysis, attacker tracing, and remediation recommendations. The project serves as a real-world case study showing effective security controls and strategies to prevent similar incidents.
+**Forensic Analysis:**
+- Bash scripting for log processing and analysis
+- PCAP analysis to reconstruct network communications
+- Database shell session examination
+- Web server and database access log correlation
+- Evidence preservation and chain of custody documentation
 
----
+**Architecture Assessment:**
+- Network segmentation evaluation
+- Privilege management review
+- Security control gap analysis
+- MITRE ATT&CK mapping of attacker techniques
 
-## Project Highlights
+## Key Findings
+- Attacker exploited unrestricted file upload vulnerability
+- Weak firewall segmentation enabled lateral movement
+- Overprivileged database access facilitated data exfiltration
+- Data stolen via SCP/SSH to external server
+- Multiple critical security controls were missing or misconfigured
+- Simple controls (WAF, MFA, segmentation) could have stopped or contained the breach
 
-| Skill | Tools/Technology | Result/Outcome |
-| :-- | :-- | :-- |
-| Log Forensics | Bash, text processing | Reconstructed timeline of attacker entry/escalation |
-| Network Architecture | draw.io, Visio | Identified segmentation gaps, mapped breach impact |
-| Incident Response | Markdown, reporting | Produced executive & technical reports |
-| Vulnerability Analysis | Enumeration, WAF, MFA | Pinpointed gaps, recommended controls |
-| Professional Comms | Email, PDF | Delivered actionable findings to leadership |
+## Technologies Used
+- **Log Analysis:** Bash scripting, text processing
+- **Network Analysis:** Wireshark, PCAP analysis
+- **Architecture Documentation:** draw.io, Visio
+- **Incident Response:** Markdown reporting, PDF documentation
+- **Database Analysis:** SQL query analysis, database shell examination
+- **Vulnerability Assessment:** Enumeration tools, WAF evaluation, MFA analysis
 
----
+## Files Included
+- [Project 12 - Forensics Report and Documentation.pdf](Project%2012%20-%20Forensics%20Report%20and%20Documentation.pdf) - Main technical report with complete investigation findings
+- [Premium House Lights_ Email To Your Manager.pdf](Premium%20House%20Lights_%20Email%20To%20Your%20Manager.pdf) - Executive summary communication to leadership
+- [Premium House Lights_ The Heist.pdf](Premium%20House%20Lights_%20The%20Heist.pdf) - Presentation slides with visual findings
 
-## Quick Start Guide
-- Main deliverables are PDF files listed above.
-- Appendices, logs, and evidence supporting the report are in the `digital forensic artifacts` folder.
-- Visuals are in the `images` folder and embedded where relevant.
+## Supporting Evidence & Documentation
 
----
-
-## Investigation Scenario
-
-### Steps Overview
-- **Detection:** Abnormal web activity was flagged, prompting investigation.
-- **Initial Access:** Attacker exploited an unrestricted file upload vulnerability.
-- **Lateral Movement:** Weak firewall segmentation and overprivileged database access enabled attacker movement.
-- **Data Exfiltration:** Data stolen via SCP/SSH to an external server.
-
----
-
-## Visual Evidence & Documentation
-- **Network Diagram:**
-![Premium House Lights Network Diagram](images/phl_network_diagram.png)
-Shows VLAN structure, firewall placement, and business services.
-- **Attack Path & Security Gaps:**
-![Attacker Steps and Security Gaps](images/Premium%20House%20Lights%20Network%20%E2%80%93%20Annotated%20Attack%20Path%20and%20Security%20Gaps.drawio.png)
-Highlights the attacker’s pivot steps with callouts for missing security controls.
-
----
-
-## Digital Forensic Artifacts (Appendices)
-All supporting evidence, logs, and raw data referenced in the main reports are located in [`digital forensic artifacts`](digital%20forensic%20artifacts/) :
-
-- [`phl_access_log.txt`](digital%20forensic%20artifacts/phl_access_log.txt) — Web/server access logs (redacted)
+**Digital Forensic Artifacts:**
+Located in the [`digital forensic artifacts`](digital%20forensic%20artifacts/) folder:
+- [`phl_access_log.txt`](digital%20forensic%20artifacts/phl_access_log.txt) — Web/server access logs
 - [`phl_database_access_log.txt`](digital%20forensic%20artifacts/phl_database_access_log.txt) — Database access logs
 - [`phl_database.pcap`](digital%20forensic%20artifacts/phl_database.pcap) — Network packet capture (database)
 - [`phl_webserver.pcap`](digital%20forensic%20artifacts/phl_webserver.pcap) — Network packet capture (web server)
 - [`phl_database_shell.txt`](digital%20forensic%20artifacts/phl_database_shell.txt) — Database shell session transcript
-- [`phl_database_tables.db`](digital%20forensic%20artifacts/phl_database_tables.db) — Sample database (for investigation)
 - [`sha256sum.txt`](digital%20forensic%20artifacts/sha256sum.txt) — File hashes for evidence verification
 
----
+**Visual Evidence:**
+- **Network Diagram:** Shows VLAN structure, firewall placement, and business services
+- **Attack Path Diagram:** Highlights attacker's pivot steps with security gap callouts
 
-## Lessons Learned
-- Critical business data may be compromised quickly without basic segmentation and privilege limitations.
-- Simple controls such as Web Application Firewall (WAF), multi-factor authentication (MFA) or segmented networks could have stopped or contained such breaches.
-- Clear communication of risk accelerates leadership buy-in for security investments.
-
----
-
-## Replication & Analysis
-- This project is strictly for demonstration purposes.
-- For replication, detailed log analysis, or further study, consult provided Markdown/PDF reports and raw logs.
+## Key Takeaways
+- Critical business data can be compromised quickly without proper segmentation and privilege limitations
+- Foundational security controls (WAF, MFA, network segmentation) could have prevented or contained this breach
+- Clear communication of risk accelerates leadership buy-in for security investments
+- Proper forensic documentation is essential for both technical understanding and legal proceedings
 
 ---
 
@@ -87,5 +83,3 @@ All supporting evidence, logs, and raw data referenced in the main reports are l
 - Open-source log review practices
 
 See the main report for detailed citations and source list.
-
----
