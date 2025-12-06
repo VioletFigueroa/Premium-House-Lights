@@ -8,8 +8,19 @@
 
 ---
 
+**How to view artifacts:** Open `Project 12 - Forensics Report and Documentation.pdf` for the full technical report, or skim `premium-house-lights.md` for narrative highlights. Executive view: `Premium House Lights_ Email To Your Manager.pdf`.
+
+**Result snapshot:** Traced attacker entry via unrestricted file upload, mapped lateral movement, and recommended WAF + segmentation + MFA to stop recurrence.
+
+**Quick review:**
+- Docs: `Project 12 - Forensics Report and Documentation.pdf` (tech), `Premium House Lights_ Email To Your Manager.pdf` (exec)
+- Evidence: see `digital forensic artifacts/` (pcaps, logs, shell transcript)
+- Start with: Attack path diagram below to grasp impact and fixes
+
 ## Overview
 Full-scope digital forensics investigation and incident response simulation following a cyberattack at Premium House Lights, a fictional small business. This project demonstrates breach detection, log analysis, attacker tracing, and remediation recommendations. It serves as a real-world case study showing effective security controls and strategies to prevent similar incidents.
+
+![Premium House Lights network diagram](./images/phl_network_diagram.png)
 
 ## Objectives
 - Investigate and document a cyberattack on a small business network
@@ -56,6 +67,8 @@ Full-scope digital forensics investigation and incident response simulation foll
 - **Database Analysis:** SQL query analysis, database shell examination
 - **Vulnerability Assessment:** Enumeration tools, WAF evaluation, MFA analysis
 
+**Data handling:** All artifacts are lab-generated; pcaps/logs contain no customer data and hashes are provided in `digital forensic artifacts/sha256sum.txt`.
+
 ## Files Included
 - [Project 12 - Forensics Report and Documentation.pdf](Project%2012%20-%20Forensics%20Report%20and%20Documentation.pdf) - Main technical report with complete investigation findings
 - [Premium House Lights_ Email To Your Manager.pdf](Premium%20House%20Lights_%20Email%20To%20Your%20Manager.pdf) - Executive summary communication to leadership
@@ -81,6 +94,10 @@ Located in the [`digital forensic artifacts`](digital%20forensic%20artifacts/) f
 - Foundational security controls (WAF, MFA, network segmentation) could have prevented or contained this breach
 - Clear communication of risk accelerates leadership buy-in for security investments
 - Proper forensic documentation is essential for both technical understanding and legal proceedings
+
+## Lessons Learned
+- Small control changes (WAF + MFA + segmentation) would have broken the attack chain early.
+- Evidence hashing and tidy artifacts made leadership/legal handoff smooth.
 
 ---
 
