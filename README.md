@@ -1,5 +1,14 @@
 # Premium House Lights: The Heist
 
+![GitHub last commit](https://img.shields.io/github/last-commit/VioletFigueroa/Premium-House-Lights?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/VioletFigueroa/Premium-House-Lights?style=flat-square)
+![License](https://img.shields.io/badge/license-Educational-blue?style=flat-square)
+![Release](https://img.shields.io/github/v/release/VioletFigueroa/Premium-House-Lights?style=flat-square)
+
+**Quick Links:** [Documentation](README.md) | [Security Policy](SECURITY.md) | [Contributing](CONTRIBUTING.md) | [Release](https://github.com/VioletFigueroa/Premium-House-Lights/releases/tag/v1.0.0)
+
+---
+
 ## Overview
 Full-scope digital forensics investigation and incident response simulation following a cyberattack at Premium House Lights, a fictional small business. This project demonstrates breach detection, log analysis, attacker tracing, and remediation recommendations. It serves as a real-world case study showing effective security controls and strategies to prevent similar incidents.
 
